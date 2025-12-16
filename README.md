@@ -1,1 +1,1 @@
-# docs-api-test
+# docs-api-testnpm install my-api-tool
