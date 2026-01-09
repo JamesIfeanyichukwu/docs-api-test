@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Cat Facts API
+  version: 1.0.0
+servers:
+- url: https://catfact.ninja
+paths:
+  /fact:
+    get:
+      summary: Get a Random Fact About Cats
+      description: This endpoint is used to fetch facts about cats in a random manner
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  {
+                    "fact": "Mohammed loved cats and reportedly his favorite cat, Muezza, was a tabby. Legend says that tabby cats have an “M” for Mohammed on top of their heads because Mohammad would often rest his hand on the cat’s head.",
+                    "length": 210
+                  }
